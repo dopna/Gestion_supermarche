@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET7_0;NETCOREAPP
 C:\Users\remy\RiderProjects\applicationDesktop\applicationDesktop\App.xaml
-51053629464
+6-678708207
 
-71841191846
+8-1956653324
 198-308891145
-MainWindow.xaml;pageCategories.xaml;PageConnexion.xaml;pagedeGarde.xaml;PageVendeurs.xaml;
+connexion.xaml;MainWindow.xaml;pageCategories.xaml;PageConnexion.xaml;pagedeGarde.xaml;PageVendeurs.xaml;
 
-False
+True
 
