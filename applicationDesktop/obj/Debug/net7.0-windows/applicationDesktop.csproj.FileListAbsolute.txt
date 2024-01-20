@@ -3,7 +3,6 @@ C:\Users\remy\RiderProjects\applicationDesktop\applicationDesktop\bin\Debug\net7
 C:\Users\remy\RiderProjects\applicationDesktop\applicationDesktop\bin\Debug\net7.0-windows\applicationDesktop.runtimeconfig.json
 C:\Users\remy\RiderProjects\applicationDesktop\applicationDesktop\bin\Debug\net7.0-windows\applicationDesktop.dll
 C:\Users\remy\RiderProjects\applicationDesktop\applicationDesktop\bin\Debug\net7.0-windows\applicationDesktop.pdb
-C:\Users\remy\RiderProjects\applicationDesktop\applicationDesktop\obj\Debug\net7.0-windows\applicationDesktop.csproj.AssemblyReference.cache
 C:\Users\remy\RiderProjects\applicationDesktop\applicationDesktop\obj\Debug\net7.0-windows\MainWindow.g.cs
 C:\Users\remy\RiderProjects\applicationDesktop\applicationDesktop\obj\Debug\net7.0-windows\PageConnexion.g.cs
 C:\Users\remy\RiderProjects\applicationDesktop\applicationDesktop\obj\Debug\net7.0-windows\App.g.cs
@@ -27,3 +26,9 @@ C:\Users\remy\RiderProjects\applicationDesktop\applicationDesktop\obj\Debug\net7
 C:\Users\remy\RiderProjects\applicationDesktop\applicationDesktop\obj\Debug\net7.0-windows\PageVendeurs.g.cs
 C:\Users\remy\RiderProjects\applicationDesktop\applicationDesktop\obj\Debug\net7.0-windows\pageCategories.baml
 C:\Users\remy\RiderProjects\applicationDesktop\applicationDesktop\obj\Debug\net7.0-windows\PageVendeurs.baml
+C:\Users\remy\RiderProjects\applicationDesktop\applicationDesktop\obj\Debug\net7.0-windows\connexion.g.cs
+C:\Users\remy\RiderProjects\applicationDesktop\applicationDesktop\obj\Debug\net7.0-windows\connexion.baml
+C:\Users\remy\RiderProjects\applicationDesktop\applicationDesktop\obj\Debug\net7.0-windows\applicationDesktop.sourcelink.json
+C:\Users\remy\RiderProjects\applicationDesktop\applicationDesktop\obj\Debug\net7.0-windows\applicationDesktop.csproj.AssemblyReference.cache
+C:\Users\remy\RiderProjects\applicationDesktop\applicationDesktop\bin\Debug\net7.0-windows\FontAwesome.WPF.dll
+C:\Users\remy\RiderProjects\applicationDesktop\applicationDesktop\obj\Debug\net7.0-windows\applicationDesktop.csproj.CopyComplete

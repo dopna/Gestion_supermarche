@@ -20,4 +20,5 @@ public partial class PageVendeurs : Window
     {
         BlockUIContainer container = new BlockUIContainer();
     }
+   
 }

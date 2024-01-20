@@ -9,29 +9,29 @@
     <Grid>
         <Grid Background="Orange" Width="150" HorizontalAlignment="Left">
             <StackPanel>
-                <Label Content="Articles" HorizontalAlignment="Center"  FontSize="20" Margin="0,60"/>
-                <Label Content="Categories"  HorizontalAlignment="Center"  FontSize="20" Margin="10,-40"/>
-                <Label Content="Vendeurs"  HorizontalAlignment="Center"  FontSize="20" Margin="10,10"/>
-                <Label Content="Facturations"  HorizontalAlignment="Center"  FontSize="20" Margin="1  0"/>
-                <Button  HorizontalAlignment="Center" FontSize="20" Background="Orange" Margin="10,160"> Deconnexion</Button>
+                <Button Content="Articles" HorizontalAlignment="Center"  FontSize="20" Margin="30,50" />
+                <Button   x:Name="btnCategories"  Content="Categories"  HorizontalAlignment="Center"  FontSize="20" Margin="10,-20"    Click="btnCategories_Click" />
+                <Button   x:Name="btnVendeurs" Content="Vendeurs"  HorizontalAlignment="Center"  FontSize="20" Margin="10,40" Click="btnVendeurs_Click"/>
+                <Button Content="Facturations"  HorizontalAlignment="Center"  FontSize="20" Margin="1  0"/>
+                <Button  HorizontalAlignment="Center" FontSize="20" Background="Orange" Margin="10,160">Deconnexion</Button>
             </StackPanel>
-          
-            
+
+
         </Grid>
 
         <!-- Header en gris -->
         <Grid Background="Bisque" Margin="150,0,0,0" VerticalAlignment="Top" Height="50">
             <Label Content="Gestions des Articles" FontSize="20" HorizontalAlignment="Center" Grid.Row="0" />
         </Grid>
-        <StackPanel Grid.Row="1" HorizontalAlignment="Center" Margin="50">
+        <StackPanel HorizontalAlignment="Center" Margin="0,50,0,214">
             <Label Content="Nom de l'article" FontSize="20" Margin="0,0,320,10" />
             <TextBox Width="180" Height="25" HorizontalAlignment="Center" Margin="0,-11,285,0" />
         </StackPanel>
-        
+
         <TextBlock HorizontalAlignment="Left" Margin="357,55,0,0" TextWrapping="Wrap" Text="Prix de l'article en €" VerticalAlignment="Top" Height="42" Width="230"  FontSize="20" TextAlignment="Center" />
 
         <TextBox x:Name="textNom" HorizontalAlignment="Left" Height="25" Margin="390,86,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="180" Foreground="black" FontSize="26" TextAlignment="Left" Background="white"/>
-        
+
         <TextBlock HorizontalAlignment="Left" Margin="520,55,0,0" TextWrapping="Wrap" Text="Categorie" VerticalAlignment="Top" Height="42" Width="267"  FontSize="20" TextAlignment="Center" />
 
         <ComboBox x:Name="categorie" HorizontalAlignment="Right" Height="25" Margin="7,85,9,0" VerticalAlignment="Top" Width="180" Foreground="black" FontSize="26">
@@ -39,14 +39,38 @@
             <ComboBoxItem Content="Option 2" />
             <ComboBoxItem Content="Option 3" />
         </ComboBox>
-        <TextBlock HorizontalAlignment="Left" Margin="43,110,0,0" TextWrapping="Wrap" Text="Stock" VerticalAlignment="Top" Height="42" Width="297"  FontSize="20" TextAlignment="Center" />
+        <TextBlock HorizontalAlignment="Left" Margin="165,110,0,0" TextWrapping="Wrap" Text="Stock" VerticalAlignment="Top" Height="25" Width="60"  FontSize="20" TextAlignment="Center" />
 
-        <TextBox x:Name="stock" HorizontalAlignment="Left" Height="25" Margin="158,138,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="180"  FontSize="20" TextAlignment="Left"/>
+        <TextBox x:Name="stock" HorizontalAlignment="Left" Height="25" Margin="158,138,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="190"  FontSize="20" TextAlignment="Left"/>
         <TextBlock HorizontalAlignment="Left" Margin="277,110,0,0" TextWrapping="Wrap" Text="Date" VerticalAlignment="Top" Height="42" Width="267"  FontSize="20" TextAlignment="Center" />
         <DatePicker x:Name="datePicker" HorizontalAlignment="Left" VerticalAlignment="Top" Width="180" Margin="392,138,0,0" />
         <Button Background="Orange" x:Name="btnEnregistrer" Content="Enregistrer" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Height="30" Click="btnEnregistrer_Click" Margin="157,190,0,0" />
-      <Button Background="Orange" x:Name="btnModifier" Content="Modifier" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Height="30" Click="btnEnregistrer_Click" Margin="297,190,0,0" />
+        <Button Background="Orange" x:Name="btnModifier" Content="Modifier" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Height="30" Click="btnEnregistrer_Click" Margin="297,190,0,0" />
         <Button Background="Orange" x:Name="btnSupprimer" Content="Supprimer" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Height="30" Click="btnEnregistrer_Click" Margin="437,190,0,0" />
         <Button Background="Orange" x:Name="btnActualiser" Content="Actualiser " HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Height="30" Click="btnEnregistrer_Click" Margin="587,190,0,0" />
+        <StackPanel  >
+            <ListView Width="497" Margin="20,240" Height="23" >
+                <ListView.View >
+                    <GridView>
+                        <GridViewColumn Header="Code  article" Width="auto" DisplayMemberBinding="{Binding Artcode}" />
+                        <GridViewColumn Header="Nom  article" Width="auto" DisplayMemberBinding="{Binding Artnom}" />
+                        <GridViewColumn Header="Prix Article" Width="auto" DisplayMemberBinding="{Binding Artprix}" />
+                        <GridViewColumn Header="Categorie article" Width="auto" DisplayMemberBinding="{Binding Artcat}" />
+                        <GridViewColumn Header="Stock article" Width="auto" DisplayMemberBinding="{Binding Artstock}" />
+                        <GridViewColumn Header="Date expiration article" Width="auto">
+                            <GridViewColumn.CellTemplate>
+                                <DataTemplate>
+                                    <TextBlock Text="{Binding ArtExpDate, StringFormat=\{0:dd/MM/yyyy\}}" />
+                                </DataTemplate>
+                            </GridViewColumn.CellTemplate>
+                        </GridViewColumn>
+
+                    </GridView>
+                </ListView.View>
+            </ListView>
+
+        </StackPanel>
+
     </Grid>
+
 </Window>

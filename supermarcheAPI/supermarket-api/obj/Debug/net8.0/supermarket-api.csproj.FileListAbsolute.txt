@@ -1,0 +1,7 @@
+C:\Users\remy\source\repos\supermarcheAPI\supermarket-api\obj\Debug\net8.0\supermarket-api.csproj.AssemblyReference.cache
+C:\Users\remy\source\repos\supermarcheAPI\supermarket-api\obj\Debug\net8.0\supermarket-api.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\remy\source\repos\supermarcheAPI\supermarket-api\obj\Debug\net8.0\supermarket-api.AssemblyInfoInputs.cache
+C:\Users\remy\source\repos\supermarcheAPI\supermarket-api\obj\Debug\net8.0\supermarket-api.AssemblyInfo.cs
+C:\Users\remy\source\repos\supermarcheAPI\supermarket-api\obj\Debug\net8.0\supermarket-api.csproj.CoreCompileInputs.cache
+C:\Users\remy\source\repos\supermarcheAPI\supermarket-api\obj\Debug\net8.0\supermarket-api.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\remy\source\repos\supermarcheAPI\supermarket-api\obj\Debug\net8.0\supermarket-api.MvcApplicationPartsAssemblyInfo.cache

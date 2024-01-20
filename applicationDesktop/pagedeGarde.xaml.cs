@@ -1,3 +1,4 @@
+using System;
 using System.Text.RegularExpressions;
 using System.Windows;
 using System.Windows.Input;
@@ -28,9 +29,34 @@ public partial class pagedeGarde : Window
             MessageBox.Show("Aucune date sélectionnée.");
         }
     }
+    private void btnCategories_Click(object sender, RoutedEventArgs e)
+    {
+        try
+        {
+            // Créer une nouvelle instance de PageVendeurs
+            pageCategories categories = new pageCategories();
+
+            // Afficher la nouvelle interface
+            categories.Show();
+        }
+        catch (Exception ex)
+        {
+            MessageBox.Show($"Une erreur s'est produite : {ex.Message}");
+        }
+    }
     private void btnEnregistrer_Click(object sender, RoutedEventArgs e)
     {
         // Code pour gérer l'action d'enregistrement ici
         // Vous pouvez enregistrer les données ou effectuer d'autres actions en conséquence
     }
+
+    private void btnVendeurs_Click(object sender, RoutedEventArgs e)
+    {
+        PageVendeurs vendeurs = new PageVendeurs();
+
+        // Afficher la nouvelle interface
+        vendeurs.Show();
+
+    }
+
 }

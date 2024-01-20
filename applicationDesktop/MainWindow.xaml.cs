@@ -26,13 +26,13 @@ namespace applicationDesktop
             InitializeComponent();
             this.Hide();
             PageConnexion connect = new PageConnexion();
-            connect.Hide();
+            connect.Close();
             pagedeGarde garde = new pagedeGarde();
-            garde.Hide();
-            PageVendeurs vendeurs = new PageVendeurs();
-            vendeurs.Show();
+            garde.Show();
+            
 
         }
+       
 
     }
 }
