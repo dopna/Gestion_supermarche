@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "T3M3LOqX/LpdkYPeveB/W8Kt0lHzxMxEkjCDBUGDatJBiqHmL6LdFWksoJgNujd0DAyWy5YEcyzFrZG3Bmw3bg==",
+  "dgSpecHash": "4wsn4zF3bozUJAMGBPCLCtUH88JqBpotZ4duukqsGMT+IkxxCPPMRRxbUeyIF20gApfqAvb2uGnjFZxujjUkog==",
   "success": true,
   "projectFilePath": "C:\\Users\\remy\\RiderProjects\\applicationDesktop\\applicationDesktop\\applicationDesktop.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\remy\\.nuget\\packages\\fontawesome.wpf\\4.7.0.9\\fontawesome.wpf.4.7.0.9.nupkg.sha512",
+    "C:\\Users\\remy\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
     "C:\\Users\\remy\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.14\\microsoft.windowsdesktop.app.ref.7.0.14.nupkg.sha512",
     "C:\\Users\\remy\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.14\\microsoft.netcore.app.ref.7.0.14.nupkg.sha512",
     "C:\\Users\\remy\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.14\\microsoft.aspnetcore.app.ref.7.0.14.nupkg.sha512",

@@ -1,7 +1,11 @@
 using System;
+using System.Collections.Generic;
+using System.Net.Http;
 using System.Text.RegularExpressions;
 using System.Windows;
 using System.Windows.Input;
+using applicationDesktop.models;
+using Newtonsoft.Json;
 
 namespace applicationDesktop;
 
@@ -59,4 +63,48 @@ public partial class pagedeGarde : Window
 
     }
 
+    private async void btnActualiser_Click(object sender, RoutedEventArgs e)
+    {
+        try
+        {
+            using (HttpClient client = new HttpClient())
+            {
+                
+                var response = await client.GetAsync("http://localhost:7107");
+                response.EnsureSuccessStatusCode();
+                if (response.IsSuccessStatusCode)
+                {
+                    string content = await response.Content.ReadAsStringAsync();
+                    List<Article> articles = JsonConvert.DeserializeObject<List<Article>>(content);
+                    foreach (var article in articles)
+                    {
+                        // Afficher chaque article (exemple avec une MessageBox)
+                        MessageBox.Show($"ID: {article.Id}, Nom: {article.Nom}, Prix: {article.Prix}, Catégorie: {article.Categorie}, Stock: {article.Stock}, DateExpiration: {article.DateExpiration}");
+                    }
+
+                }
+                else
+                {
+                    Console.WriteLine(response.ToString());
+                }
+            }
+        }
+        catch (Exception)
+        {
+
+            // Gérer les exceptions si nécessaire
+            Console.WriteLine("ex");
+        }
+       
+    }
+
+    private void btnModifier_Click(object sender, RoutedEventArgs e)
+    {
+
+    }
+
+    private void btnSupprimer_Click(object sender, RoutedEventArgs e)
+    {
+
+    }
 }

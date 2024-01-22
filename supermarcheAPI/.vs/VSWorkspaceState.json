@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Controllers",
+    "\\models",
+    "\\Properties"
   ],
-  "SelectedNode": "\\supermarcheAPI.sln",
+  "SelectedNode": "\\models\\Article.cs",
   "PreviewInSolutionExplorer": false
 }

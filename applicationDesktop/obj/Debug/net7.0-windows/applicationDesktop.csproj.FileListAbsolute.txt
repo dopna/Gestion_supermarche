@@ -32,3 +32,4 @@ C:\Users\remy\RiderProjects\applicationDesktop\applicationDesktop\obj\Debug\net7
 C:\Users\remy\RiderProjects\applicationDesktop\applicationDesktop\obj\Debug\net7.0-windows\applicationDesktop.csproj.AssemblyReference.cache
 C:\Users\remy\RiderProjects\applicationDesktop\applicationDesktop\bin\Debug\net7.0-windows\FontAwesome.WPF.dll
 C:\Users\remy\RiderProjects\applicationDesktop\applicationDesktop\obj\Debug\net7.0-windows\applicationDesktop.csproj.CopyComplete
+C:\Users\remy\RiderProjects\applicationDesktop\applicationDesktop\bin\Debug\net7.0-windows\Newtonsoft.Json.dll

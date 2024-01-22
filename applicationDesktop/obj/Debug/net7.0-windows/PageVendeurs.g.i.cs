@@ -101,7 +101,7 @@ namespace applicationDesktop {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/applicationDesktop;V1.0.0.0;component/pagevendeurs.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/applicationDesktop;component/pagevendeurs.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\PageVendeurs.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
